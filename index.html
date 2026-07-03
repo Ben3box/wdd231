@@ -12,12 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- CSS Stylesheets -->
+    <!-- CSS Stylesheets Cascade -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     
-    <!-- External JavaScript Files (Loaded with defer) -->
+    <!-- Modular JavaScript Files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
@@ -27,8 +27,7 @@
     <header>
         <div class="header-container">
             <div class="logo-area">
-                <!-- Site logo configured as an SVG file -->
-                <img src="images/logo.svg" alt="Course Portal Logo" class="site-logo" width="45" height="45">
+                <img src="images/logo.JPG" alt="Course Portal Logo" class="site-logo" width="45" height="45">
                 <span>Benjamin Iriganje</span>
             </div>
             <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
@@ -58,7 +57,6 @@
             <section class="card">
                 <h2>Student Photo</h2>
                 <div class="card-content centered-content">
-                    <!-- Optimized profile picture asset under 125 kB -->
                     <img src="images/profile.jpg" alt="Benjamin Iriganje Profile Photo" class="student-photo" width="250" height="250">
                 </div>
             </section>
@@ -74,30 +72,22 @@
                     <button id="filter-wdd" class="filter-btn">WDD</button>
                 </div>
                 
-                <!-- Dynamic Course Container filled by JavaScript -->
                 <div id="courses-container" class="courses-grid"></div>
                 
-                <!-- Dynamic Credits Tracker filled by JavaScript -->
                 <p id="total-credits" class="credits-total"></p>
             </div>
         </section>
     </main>
 
-   <footer>
-   <div class="social-links">  
-			 <a href="https://github.com">
-                <img src="images/github.svg" alt="GitHub Icon">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.svg" alt="LinkedIn Icon">
-            </a>
-            <a href="https://X.com">
-                <img src="images/x-icon.svg" alt="X Logo" weight="200" height="200">
-            </a>
-			</div>
-    <p>&copy; <span id="currentyear"></span> • Benjamin Iriganje • Bujumbura, Burundi</p>
-    <p id="lastModified"></p>
-</footer>
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com"><img src="images/github-icon.svg" alt="GitHub Logo"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin-icon.svg" alt="LinkedIn Logo"></a>
+            <a href="https://x.com"><img src="images/x-icon.jpg" alt="X Logo"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Benjamin Iriganje • Bujumbura, Burundi</p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 </html>

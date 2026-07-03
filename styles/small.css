@@ -1,4 +1,3 @@
-/* Custom Typography & Colors Variables */
 :root {
     --primary-font: 'Outfit', sans-serif;
     --bg-light: #fdfdfd;
@@ -23,7 +22,6 @@ body {
     margin: 0;
 }
 
-/* Header & Mobile Toggle Menu Styling */
 header {
     background-color: var(--dark-primary);
     color: var(--white);
@@ -57,7 +55,6 @@ header {
     padding: 5px 10px;
 }
 
-/* Mobile Nav Structure (Hidden until toggled) */
 #primary-nav {
     display: none;
     background-color: var(--accent-color);
@@ -84,7 +81,6 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Wayfinding & Anti-Twitching Hover Styles */
 #primary-nav li.active a {
     background-color: var(--dark-primary);
     font-weight: 700;
@@ -94,7 +90,6 @@ header {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Main Layout Architecture */
 main {
     padding: 20px;
     max-width: 1200px;
@@ -137,7 +132,6 @@ h1 {
     align-items: center;
 }
 
-/* Non-distorted Optimized Images */
 .student-photo {
     width: 100%;
     max-width: 280px;
@@ -152,7 +146,6 @@ h1 {
     object-fit: contain;
 }
 
-/* Course Layout & Button Navigation Filters */
 .course-filters {
     display: flex;
     justify-content: center;
@@ -183,7 +176,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Individual Course Cards */
 .course-card {
     padding: 15px;
     text-align: center;
@@ -208,79 +200,47 @@ h1 {
     color: var(--dark-primary);
 }
 
-/* Footer Element Area */
 footer {
-    background-color: var(--dark-primary);
-    color: var(--white);
+    background-color: #1a252f;
+    color: #ffffff;
     text-align: center;
     padding: 25px 20px;
     margin-top: 40px;
+    font-family: 'Outfit', sans-serif;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     margin-bottom: 15px;
 }
 
-.social-links img {
-    transition: transform 0.2s;
-    display: block;
-}
-
-.social-links img:hover {
-    transform: scale(1.15);
-}
-
-/* Footer Container Styling */
-footer {
-    background-color: #1a252f; /* Dark background color */
-    color: #ffffff;            /* White text */
-    text-align: center;        /* Centered text alignments */
-    padding: 25px 20px;        /* Spacing inside the footer */
-    margin-top: 40px;          /* Separation from the main content */
-    font-family: 'Outfit', sans-serif;
-}
-
-/* Social Links Flex Container */
-.social-links {
-    display: flex;
-    justify-content: center;   /* Center the items horizontally */
-    align-items: center;       /* Vertical alignment alignment */
-    gap: 20px;                 /* Clean spacing between icons */
-    margin-bottom: 15px;       /* Space below the icon row */
-}
-
-/* Social Link Anchor Tags */
 .social-links a {
     display: inline-block;
     text-decoration: none;
-    line-height: 1;            /* Prevents extra height errors */
+    line-height: 1;
 }
 
-/* Social Media Icon Styling */
 .social-links img {
     display: block;
-    width: 30px;               /* Uniform icon sizing width */
-    height: 30px;              /* Uniform icon sizing height */
-    object-fit: contain;       /* Prevents squishing or distortion */
-    transition: transform 0.2s ease-in-out; /* Smooth transition for hover */
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Anti-Twitching Interactive Hover Effect */
 .social-links a:hover img {
-    transform: scale(1.15);    /* Clean, non-disruptive enlargement */
+    transform: scale(1.15);
 }
 
-/* Footer Typography Design */
 footer p {
-    margin: 6px 0;             /* Consistent spacing between paragraphs */
-    font-size: 0.95rem;        /* Highly readable sizing */
+    margin: 6px 0;
+    font-size: 0.95rem;
     line-height: 1.5;
 }
 
-/* Style for dynamic text placeholders */
 #currentyear, #lastModified {
-    font-weight: 600;          /* Subtle emphasis on dynamic dates */
+    font-weight: 600;
 }

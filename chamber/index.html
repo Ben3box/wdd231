@@ -213,18 +213,5 @@
       <span>Built for the W03 Chamber of Commerce project.</span>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const navToggleBtn = document.getElementById("navToggleBtn");
-    const mainNav = document.getElementById("mainNav");
-    navToggleBtn.addEventListener("click", () => {
-      const isOpen = mainNav.classList.toggle("is-open");
-      navToggleBtn.setAttribute("aria-expanded", isOpen);
-    });
-  </script>
-  <script src="js/weather.js"></script>
-  <script src="js/spotlights.js"></script>
 </body>
 </html>

@@ -5,23 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Member Directory | Regional Chamber of Commerce</title>
   <meta name="description" content="Browse members of the Regional Chamber of Commerce, Bujumbura.">
+  <meta name="author" content="Benjamin Iriganje">
+
+  <!-- Google Fonts Preconnects -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <meta property="og:title" content="Chamber of Commerce Business Directory">
+  <meta property="og:description" content="Discover, connect, and grow with leading businesses in our region.">
+  <meta property="og:image" content="https://ben3box.github.io/wdd231/chamber/images/og-share.jpg">
+  <meta property="og:url" content="https://ben3box.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html">
-        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
-          <circle cx="20" cy="20" r="19" fill="none" stroke="#d9a441" stroke-width="2"/>
-          <circle cx="20" cy="20" r="12" fill="none" stroke="#e2672a" stroke-width="2"/>
-          <circle cx="20" cy="20" r="5" fill="#d9a441"/>
-        </svg>
+        <img class="brand__mark" src="images/favicon.svg" alt="Regional Chamber of Commerce logo" width="40" height="40">
         <span class="brand__text">
           Regional Chamber
           <small>of Commerce &middot; Bujumbura</small>
@@ -92,14 +100,5 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    const navToggleBtn = document.getElementById("navToggleBtn");
-    const mainNav = document.getElementById("mainNav");
-    navToggleBtn.addEventListener("click", () => {
-      const isOpen = mainNav.classList.toggle("is-open");
-      navToggleBtn.setAttribute("aria-expanded", isOpen);
-    });
-  </script>
 </body>
 </html>

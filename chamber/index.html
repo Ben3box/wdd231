@@ -7,7 +7,14 @@
   <meta name="description" content="Regional Chamber of Commerce — connecting businesses in Bujumbura, Burundi through advocacy, events, and community.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Chamber of Commerce Business Directory">
+  <meta property="og:description" content="Discover, connect, and grow with leading businesses in our region.">
+  <meta property="og:image" content="https://ben95dev.github.io/wdd231/chamber/images/og-share.jpg">
+  <meta property="og:url" content="https://ben95dev.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+    
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/normalize.css">
   <script src="scripts/directory.js" defer></script>
   <script src="scripts/spotlights.js" defer></script>
   <script src="scripts/weather.js" defer></script>
@@ -48,7 +55,7 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="wrap hero__grid" style="grid-template-columns: 1fr;">
+      <div class="wrap hero__grid">
         <div>
           <p class="hero__eyebrow">&#9673; Bujumbura, Burundi</p>
           <h1>Where Bujumbura's businesses <em>find their rhythm</em>.</h1>
@@ -75,8 +82,7 @@
       </div>
 
       <!-- hero art: lake, hills, sun, drum motif -->
-      <svg class="hero__bg" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true"
-        style="position:absolute; inset:0; width:100%; height:100%; z-index:1; opacity:0.9;">
+      <svg class="hero__bg" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
         <defs>
           <linearGradient id="skyFade" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#163d40" stop-opacity="0"/>
@@ -91,10 +97,10 @@
     </section>
 
     <div class="drumbeat drumbeat--dark" aria-hidden="true">
-      <span style="height:10px"></span><span style="height:22px"></span><span style="height:14px"></span>
-      <span style="height:28px"></span><span style="height:12px"></span><span style="height:20px"></span>
-      <span style="height:9px"></span><span style="height:24px"></span><span style="height:16px"></span>
-      <span style="height:11px"></span><span style="height:26px"></span><span style="height:15px"></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
     </div>
 
     <!-- ============ CURRENT EVENTS ============ -->
@@ -149,7 +155,7 @@
           </div>
 
           <div>
-            <p class="weather__status" id="weatherStatus" style="margin-bottom:0.75rem;">Fetching data from OpenWeatherMap&hellip;</p>
+            <p class="weather__status" id="weatherStatus">Fetching data from OpenWeatherMap&hellip;</p>
             <div class="weather__forecast" id="forecastList">
               <div class="forecast-day"><span class="forecast-day__label">&hellip;</span><span class="forecast-day__temp">&ndash;&ndash;&deg;</span></div>
               <div class="forecast-day"><span class="forecast-day__label">&hellip;</span><span class="forecast-day__temp">&ndash;&ndash;&deg;</span></div>
@@ -161,10 +167,10 @@
     </section>
 
     <div class="drumbeat drumbeat--light" aria-hidden="true">
-      <span style="height:9px"></span><span style="height:18px"></span><span style="height:12px"></span>
-      <span style="height:24px"></span><span style="height:10px"></span><span style="height:20px"></span>
-      <span style="height:14px"></span><span style="height:22px"></span><span style="height:11px"></span>
-      <span style="height:16px"></span><span style="height:26px"></span><span style="height:13px"></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
     </div>
 
     <!-- ============ SPOTLIGHTS ============ -->

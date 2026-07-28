@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Lac Bleu Coffee Traders",
+    "level": "gold",
+    "phone": "+257 22 24 55 10",
+    "address": "12 Avenue du Lac, Bujumbura",
+    "website": "https://www.lacbleucoffee.example.com",
+    "logo": "images/logo-lacbleu.svg",
+    "description": "Exporting Burundian highland arabica to roasters worldwide."
+  },
+  {
+    "id": 2,
+    "name": "Kibira Freight & Logistics",
+    "level": "gold",
+    "phone": "+257 22 24 61 88",
+    "address": "45 Boulevard de l'Uprona, Bujumbura",
+    "website": "https://www.kibirafreight.example.com",
+    "logo": "images/logo-kibira.svg",
+    "description": "Regional trucking and port logistics across the Great Lakes corridor."
+  },
+  {
+    "id": 3,
+    "name": "Tanganyika Grand Hotel",
+    "level": "gold",
+    "phone": "+257 22 24 70 32",
+    "address": "3 Rue du Rivage, Bujumbura",
+    "website": "https://www.tanganyikagrand.example.com",
+    "logo": "images/logo-tanganyika.svg",
+    "description": "Lakefront conferencing and hospitality for visiting business delegations."
+  },
+  {
+    "id": 4,
+    "name": "Umuco Textiles Cooperative",
+    "level": "silver",
+    "phone": "+257 22 25 03 14",
+    "address": "78 Avenue de la Révolution, Bujumbura",
+    "website": "https://www.umucotextiles.example.com",
+    "logo": "images/logo-umuco.svg",
+    "description": "Cooperative weaving workshop supplying regional retailers."
+  },
+  {
+    "id": 5,
+    "name": "Muha Valley Dairy",
+    "level": "silver",
+    "phone": "+257 22 25 18 40",
+    "address": "22 Route de Muha, Bujumbura",
+    "website": "https://www.muhavalleydairy.example.com",
+    "logo": "images/logo-muha.svg",
+    "description": "Fresh dairy products sourced from cooperative farms in the Muha valley."
+  },
+  {
+    "id": 6,
+    "name": "Rusizi Solar Works",
+    "level": "silver",
+    "phone": "+257 22 25 27 61",
+    "address": "9 Avenue de l'Industrie, Bujumbura",
+    "website": "https://www.rusizisolar.example.com",
+    "logo": "images/logo-rusizi.svg",
+    "description": "Solar installation and maintenance for commercial properties."
+  },
+  {
+    "id": 7,
+    "name": "Bujumbura Print & Sign",
+    "level": "member",
+    "phone": "+257 22 25 33 05",
+    "address": "16 Avenue du Commerce, Bujumbura",
+    "website": "https://www.bujumburaprint.example.com",
+    "logo": "images/logo-print.svg",
+    "description": "Full-service printing, signage, and branded merchandise."
+  },
+  {
+    "id": 8,
+    "name": "Source du Nil Bakery",
+    "level": "member",
+    "phone": "+257 22 25 40 92",
+    "address": "5 Rue des Boulangers, Bujumbura",
+    "website": "https://www.sourcedunilbakery.example.com",
+    "logo": "images/logo-bakery.svg",
+    "description": "Neighborhood bakery and cafe serving the central market district."
+  }
+]

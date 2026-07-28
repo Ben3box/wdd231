@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regional Chamber of Commerce | Bujumbura</title>
+  <meta name="description" content="Regional Chamber of Commerce — connecting businesses in Bujumbura, Burundi through advocacy, events, and community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="#d9a441" stroke-width="2"/>
+          <circle cx="20" cy="20" r="12" fill="none" stroke="#e2672a" stroke-width="2"/>
+          <circle cx="20" cy="20" r="5" fill="#d9a441"/>
+        </svg>
+        <span class="brand__text">
+          Regional Chamber
+          <small>of Commerce &middot; Bujumbura</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle-btn" id="navToggleBtn" aria-expanded="false" aria-controls="mainNav">
+        &#9776; <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join the Chamber</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero__grid" style="grid-template-columns: 1fr;">
+        <div>
+          <p class="hero__eyebrow">&#9673; Bujumbura, Burundi</p>
+          <h1>Where Bujumbura's businesses <em>find their rhythm</em>.</h1>
+          <p>The Regional Chamber of Commerce connects entrepreneurs, exporters, and institutions across the lakefront capital — advocacy, connections, and events that keep local business moving forward.</p>
+          <div class="hero__actions">
+            <a class="btn btn--cta" href="join.html">Become a Member &rarr;</a>
+            <a class="btn btn--ghost" href="directory.html">View the Directory</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <strong>240+</strong>
+              <span>Member businesses</span>
+            </div>
+            <div class="hero__stat">
+              <strong>18</strong>
+              <span>Events this year</span>
+            </div>
+            <div class="hero__stat">
+              <strong>1958</strong>
+              <span>Chamber founded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hero art: lake, hills, sun, drum motif -->
+      <svg class="hero__bg" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true"
+        style="position:absolute; inset:0; width:100%; height:100%; z-index:1; opacity:0.9;">
+        <defs>
+          <linearGradient id="skyFade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#163d40" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#081c1f" stop-opacity="0.6"/>
+          </linearGradient>
+        </defs>
+        <circle cx="980" cy="90" r="70" fill="#e2672a" opacity="0.55"/>
+        <path d="M0,260 C150,210 300,290 470,240 C650,185 800,260 980,220 C1080,200 1150,230 1200,215 L1200,400 L0,400 Z" fill="#123338"/>
+        <path d="M0,300 C180,260 360,320 560,280 C760,240 900,300 1100,270 C1150,262 1180,268 1200,265 L1200,400 L0,400 Z" fill="#0e2a2e"/>
+        <rect x="0" y="0" width="1200" height="400" fill="url(#skyFade)"/>
+      </svg>
+    </section>
+
+    <div class="drumbeat drumbeat--dark" aria-hidden="true">
+      <span style="height:10px"></span><span style="height:22px"></span><span style="height:14px"></span>
+      <span style="height:28px"></span><span style="height:12px"></span><span style="height:20px"></span>
+      <span style="height:9px"></span><span style="height:24px"></span><span style="height:16px"></span>
+      <span style="height:11px"></span><span style="height:26px"></span><span style="height:15px"></span>
+    </div>
+
+    <!-- ============ CURRENT EVENTS ============ -->
+    <section class="section section--soft" id="events">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <span class="section__eyebrow">Calendar</span>
+            <h2>Current events</h2>
+            <p>Upcoming gatherings for members and the wider business community.</p>
+          </div>
+        </div>
+
+        <div class="card-grid card-grid--events">
+          <article class="card event-card">
+            <span class="event-card__date">Aug 6, 2026</span>
+            <h3>Lakefront Trade Breakfast</h3>
+            <p>Monthly networking breakfast for members, hosted at the Tanganyika Grand Hotel.</p>
+          </article>
+          <article class="card event-card">
+            <span class="event-card__date">Aug 19&ndash;20, 2026</span>
+            <h3>Bujumbura Export Forum</h3>
+            <p>Two-day forum connecting coffee and textile exporters with regional buyers.</p>
+          </article>
+          <article class="card event-card">
+            <span class="event-card__date">Sep 3, 2026</span>
+            <h3>Small Business Grant Workshop</h3>
+            <p>A working session on applying for the Chamber's quarterly small-business grants.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WEATHER ============ -->
+    <section class="section" id="weather-section">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <span class="section__eyebrow">Local conditions</span>
+            <h2>Weather in Bujumbura</h2>
+            <p>Live conditions, useful for planning outdoor chamber events on the lakefront.</p>
+          </div>
+        </div>
+
+        <div class="weather" id="weatherWidget">
+          <div class="weather__now">
+            <div class="weather__temp" id="weatherTemp">&ndash;&ndash;&deg;</div>
+            <div class="weather__meta">
+              <p class="weather__place">Bujumbura, Burundi</p>
+              <p class="weather__desc" id="weatherDesc">Loading current conditions&hellip;</p>
+            </div>
+          </div>
+
+          <div>
+            <p class="weather__status" id="weatherStatus" style="margin-bottom:0.75rem;">Fetching data from OpenWeatherMap&hellip;</p>
+            <div class="weather__forecast" id="forecastList">
+              <div class="forecast-day"><span class="forecast-day__label">&hellip;</span><span class="forecast-day__temp">&ndash;&ndash;&deg;</span></div>
+              <div class="forecast-day"><span class="forecast-day__label">&hellip;</span><span class="forecast-day__temp">&ndash;&ndash;&deg;</span></div>
+              <div class="forecast-day"><span class="forecast-day__label">&hellip;</span><span class="forecast-day__temp">&ndash;&ndash;&deg;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="drumbeat drumbeat--light" aria-hidden="true">
+      <span style="height:9px"></span><span style="height:18px"></span><span style="height:12px"></span>
+      <span style="height:24px"></span><span style="height:10px"></span><span style="height:20px"></span>
+      <span style="height:14px"></span><span style="height:22px"></span><span style="height:11px"></span>
+      <span style="height:16px"></span><span style="height:26px"></span><span style="height:13px"></span>
+    </div>
+
+    <!-- ============ SPOTLIGHTS ============ -->
+    <section class="section section--soft" id="spotlights">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <span class="section__eyebrow">Member spotlights</span>
+            <h2>Businesses to know</h2>
+            <p>A rotating look at our Gold and Silver members &mdash; refresh the page to see others.</p>
+          </div>
+        </div>
+
+        <p class="spotlights__status" id="spotlightStatus">Loading member spotlights&hellip;</p>
+        <div class="card-grid card-grid--spotlights" id="spotlightGrid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__grid">
+      <div>
+        <h3>Regional Chamber of Commerce</h3>
+        <p>12 Avenue du Lac, Bujumbura, Burundi<br>Serving the businesses of the greater Bujumbura region since 1958.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Member Directory</a></li>
+          <li><a href="join.html">Join the Chamber</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>+257 22 24 50 00</li>
+          <li>info@regionalchamber-bjm.example.com</li>
+          <li>Mon&ndash;Fri, 8:00&ndash;17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <span>&copy; <span id="year"></span> Regional Chamber of Commerce, Bujumbura.</span>
+      <span>Built for the W03 Chamber of Commerce project.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const navToggleBtn = document.getElementById("navToggleBtn");
+    const mainNav = document.getElementById("mainNav");
+    navToggleBtn.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("is-open");
+      navToggleBtn.setAttribute("aria-expanded", isOpen);
+    });
+  </script>
+  <script src="js/weather.js"></script>
+  <script src="js/spotlights.js"></script>
+</body>
+</html>

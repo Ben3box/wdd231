@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Chamber | Regional Chamber of Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="#d9a441" stroke-width="2"/>
+          <circle cx="20" cy="20" r="12" fill="none" stroke="#e2672a" stroke-width="2"/>
+          <circle cx="20" cy="20" r="5" fill="#d9a441"/>
+        </svg>
+        <span class="brand__text">
+          Regional Chamber
+          <small>of Commerce &middot; Bujumbura</small>
+        </span>
+      </a>
+      <button class="nav-toggle-btn" id="navToggleBtn" aria-expanded="false" aria-controls="mainNav">
+        &#9776; <span class="sr-only">Menu</span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html" aria-current="page">Join the Chamber</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" style="padding-top: clamp(3rem, 8vw, 5rem); text-align:center;">
+      <div class="wrap" style="max-width:640px;">
+        <span class="section__eyebrow">Coming soon</span>
+        <h2>Membership application</h2>
+        <p style="color:var(--color-ink-soft);">This page is under construction as part of a later assignment. It will let new businesses apply for Chamber membership.</p>
+        <a class="btn btn--cta" href="index.html" style="margin-top:1rem;">Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__bottom">
+      <span>&copy; <span id="year"></span> Regional Chamber of Commerce, Bujumbura.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const navToggleBtn = document.getElementById("navToggleBtn");
+    const mainNav = document.getElementById("mainNav");
+    navToggleBtn.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("is-open");
+      navToggleBtn.setAttribute("aria-expanded", isOpen);
+    });
+  </script>
+</body>
+</html>

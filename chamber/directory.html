@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Directory | Regional Chamber of Commerce</title>
+  <meta name="description" content="Browse members of the Regional Chamber of Commerce, Bujumbura.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="#d9a441" stroke-width="2"/>
+          <circle cx="20" cy="20" r="12" fill="none" stroke="#e2672a" stroke-width="2"/>
+          <circle cx="20" cy="20" r="5" fill="#d9a441"/>
+        </svg>
+        <span class="brand__text">
+          Regional Chamber
+          <small>of Commerce &middot; Bujumbura</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle-btn" id="navToggleBtn" aria-expanded="false" aria-controls="mainNav">
+        &#9776; <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" aria-current="page">Directory</a></li>
+          <li><a href="join.html">Join the Chamber</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" style="padding-top: clamp(2rem, 5vw, 3.5rem);">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <span class="section__eyebrow">Members</span>
+            <h2>Member directory</h2>
+            <p>Every business currently registered with the Regional Chamber of Commerce.</p>
+          </div>
+          <div style="display:flex; gap:0.5rem;">
+            <button class="btn btn--ghost" id="gridViewBtn" style="border-color:#12201f22; color:#12201f; padding:0.55rem 1rem;">Grid</button>
+            <button class="btn btn--ghost" id="listViewBtn" style="border-color:#12201f22; color:#12201f; padding:0.55rem 1rem;">List</button>
+          </div>
+        </div>
+
+        <p id="directoryStatus">Loading member directory&hellip;</p>
+        <div class="card-grid card-grid--spotlights" id="directoryGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__grid">
+      <div>
+        <h3>Regional Chamber of Commerce</h3>
+        <p>12 Avenue du Lac, Bujumbura, Burundi<br>Serving the businesses of the greater Bujumbura region since 1958.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Member Directory</a></li>
+          <li><a href="join.html">Join the Chamber</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>+257 22 24 50 00</li>
+          <li>info@regionalchamber-bjm.example.com</li>
+          <li>Mon&ndash;Fri, 8:00&ndash;17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <span>&copy; <span id="year"></span> Regional Chamber of Commerce, Bujumbura.</span>
+      <span>Built for the W03 Chamber of Commerce project.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const navToggleBtn = document.getElementById("navToggleBtn");
+    const mainNav = document.getElementById("mainNav");
+    navToggleBtn.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("is-open");
+      navToggleBtn.setAttribute("aria-expanded", isOpen);
+    });
+  </script>
+  <script src="js/directory.js"></script>
+</body>
+</html>

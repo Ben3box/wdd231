@@ -1,0 +1,43 @@
+/* Summary Table Styling */
+.summary-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden; /* Clips table corners to the border-radius */
+}
+
+.summary-table tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.summary-table tr:last-child {
+  border-bottom: none;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 0.85rem 1.25rem;
+  text-align: left;
+}
+
+.summary-table th {
+  width: 35%;
+  background-color: #f8fafc;
+  color: #374151;
+  font-weight: 600;
+  border-right: 1px solid #e5e7eb;
+}
+
+.summary-table td {
+  color: #0d5c75;
+  font-weight: 500;
+}
+
+/* Optional row hover effect */
+.summary-table tr:hover {
+  background-color: #f1f5f9;
+}

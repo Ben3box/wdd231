@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Received | Riverbend Chamber of Commerce</title>
+  <meta name="description" content="Thank you for applying to the Riverbend Chamber of Commerce.">
+  <meta name="author" content="Benjamin Iriganje">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/join.css">
+  
+  <!-- Dedicated script for thank you page -->
+  <script src="scripts/thankyou.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+  <script src="scripts/weather.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand-row">
+    <div class="brand">Riverbend <span>Chamber</span></div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <span class="eyebrow">Application Submitted</span>
+  <h1>Thank You for Joining Us!</h1>
+  <p>We’ve received your membership application. Our team will review your details and reach out within 2–3 business days.</p>
+</section>
+
+<main class="thankyou-layout">
+  <article class="summary-card">
+    <h2>Application Summary</h2>
+    <p class="summary-intro">Here is a record of the information submitted on <span id="submittedDate" class="mono-text">--</span>:</p>
+
+    <dl class="summary-list">
+      <div class="summary-item">
+        <dt>Full Name</dt>
+        <dd id="summaryName">--</dd>
+      </div>
+
+      <div class="summary-item">
+        <dt>Title</dt>
+        <dd id="summaryTitle">--</dd>
+      </div>
+
+      <div class="summary-item">
+        <dt>Email Address</dt>
+        <dd id="summaryEmail">--</dd>
+      </div>
+
+      <div class="summary-item">
+        <dt>Phone Number</dt>
+        <dd id="summaryPhone">--</dd>
+      </div>
+
+      <div class="summary-item">
+        <dt>Organization</dt>
+        <dd id="summaryOrg">--</dd>
+      </div>
+
+      <div class="summary-item">
+        <dt>Membership Level</dt>
+        <dd><span id="summaryLevel" class="badge">--</span></dd>
+      </div>
+    </dl>
+
+    <div class="action-row">
+      <a href="index.html" class="btn-primary">Return Home</a>
+      <a href="discover.html" class="btn-secondary">Explore Riverbend</a>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Riverbend Chamber of Commerce &middot; <span class="brass">Building business together</span></p>
+</footer>
+
+</body>
+</html>

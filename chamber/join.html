@@ -1,72 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join the Chamber | Regional Chamber of Commerce</title>
-  <meta name="description" content="Apply for membership with the Regional Chamber of Commerce in Bujumbura, Burundi.">
-  <meta name="author" content="Benjamin Iriganje">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join the Chamber | Riverbend Chamber of Commerce</title>
+<meta name="description" content="Apply for membership in the Riverbend Chamber of Commerce and choose the tier that fits your organization.">
+<meta name="author" content="Benjamin Iriganje">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
 
-   <!-- Favicons -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Business Directory">
+    <meta property="og:description" content="Discover, connect, and grow with leading businesses in our region.">
+    <meta property="og:image" content="https://ben95dev.github.io/wdd231/chamber/images/og-share.jpg">
+    <meta property="og:url" content="https://ben95dev.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
 
-  <!-- Google Fonts Preconnects -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-
-  <meta property="og:title" content="Join the Chamber | Regional Chamber of Commerce">
-  <meta property="og:description" content="Apply for membership with the Regional Chamber of Commerce in Bujumbura, Burundi.">
-  <meta property="og:image" content="https://ben3box.github.io/wdd231/chamber/images/og-share.jpg">
-  <meta property="og:url" content="https://ben3box.github.io/wdd231/chamber/join.html">
-  <meta property="og:type" content="website">
-
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/reset.css">
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/join.css">
+<link rel="stylesheet" href="styles/join.css">
+<script src="scripts/script.js" defer></script>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">
-        <img class="brand__mark" src="images/favicon.svg" alt="Regional Chamber of Commerce logo" width="40" height="40">
-        <span class="brand__text">
-          Regional Chamber
-          <small>of Commerce &middot; Bujumbura</small>
-        </span>
-      </a>
-      <button class="nav-toggle-btn" id="navToggleBtn" aria-expanded="false" aria-controls="mainNav">
-        &#9776; <span class="sr-only">Menu</span>
-      </button>
-      <nav class="main-nav" id="mainNav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html" aria-current="page">Join the Chamber</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- ============================================================
+     Site chrome — replace with your real chamber template
+     (shared header / nav / footer across all pages)
+     ============================================================ -->
+<header class="site-header">
+  <div class="brand-row">
+    <div class="brand">Riverbend <span>Chamber</span></div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <main id="main">
-    <section class="section" style="padding-top: clamp(3rem, 8vw, 5rem); text-align:center;">
-      <div class="wrap" style="max-width:640px;">
-        <span class="section__eyebrow">Coming soon</span>
-        <h2>Membership application</h2>
-        <p style="color:var(--color-ink-soft);">This page is under construction as part of a later assignment. It will let new businesses apply for Chamber membership.</p>
-        <a class="btn btn--cta" href="index.html" style="margin-top:1rem;">Back to Home</a>
+<section class="page-hero">
+  <span class="eyebrow">Membership Application</span>
+  <h1>Join the Riverbend Chamber of Commerce</h1>
+  <p>Fill out the application below to become a member. Choose the tier that fits your organization — every level opens the door to a wider network, more visibility, and a stronger seat at the table.</p>
+</section>
+
+<main class="join-layout">
+
+  <!-- ============================================================
+       Membership application form
+       ============================================================ -->
+  <form class="application-form" method="get" action="thankyou.html" id="joinForm">
+    <fieldset>
+      <legend>Your information</legend>
+
+      <label class="field-label" for="fname">
+        First name <span class="req">*</span>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          title="Your first name"
+          autocomplete="given-name"
+          required>
+      </label>
+
+      <label class="field-label" for="lname">
+        Last name <span class="req">*</span>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          title="Your last name"
+          autocomplete="family-name"
+          required>
+      </label>
+
+      <label class="field-label" for="orgtitle">
+        Your title within the organization
+        <input
+          type="text"
+          id="orgtitle"
+          name="orgtitle"
+          title="Your job title, letters/hyphens/spaces only, minimum 7 characters"
+          autocomplete="organization-title"
+          pattern="[A-Za-z\-\s]{7,}"
+          placeholder="e.g. Marketing Director">
+        <span class="hint">Letters, hyphens, and spaces only — at least 7 characters.</span>
+      </label>
+
+      <label class="field-label" for="email">
+        Email address <span class="req">*</span>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          title="Your email address"
+          autocomplete="email"
+          placeholder="name@example.com"
+          required>
+      </label>
+
+      <label class="field-label" for="phone">
+        Mobile phone <span class="req">*</span>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          title="Your mobile phone number"
+          autocomplete="tel"
+          placeholder="(555) 555-0123"
+          required>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your organization</legend>
+
+      <label class="field-label" for="orgname">
+        Business/organization name <span class="req">*</span>
+        <input
+          type="text"
+          id="orgname"
+          name="orgname"
+          title="Your business or organization's name"
+          autocomplete="organization"
+          required>
+      </label>
+
+      <label class="field-label" for="description">
+        Business/organization description
+        <textarea
+          id="description"
+          name="description"
+          title="A short description of your business or organization"
+          placeholder="What does your organization do?"></textarea>
+      </label>
+
+      <span class="field-label" id="membershipLevelLabel">Membership level <span class="req">*</span></span>
+      <div class="radio-group" role="radiogroup" aria-labelledby="membershipLevelLabel">
+        <label class="radio-option">
+          <input type="radio" name="membershipLevel" value="np" required>
+          NP Membership — non-profit organizations, no fee
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="membershipLevel" value="bronze">
+          Bronze Membership
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="membershipLevel" value="silver">
+          Silver Membership
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="membershipLevel" value="gold">
+          Gold Membership
+        </label>
       </div>
-    </section>
-  </main>
+    </fieldset>
 
-  <footer class="site-footer">
-    <div class="wrap footer__bottom">
-      <span>&copy; <span id="year"></span> Regional Chamber of Commerce, Bujumbura.</span>
+    <!-- Hidden timestamp, populated on load by script.js -->
+    <input type="hidden" name="timestamp" id="timestamp">
+
+    <div class="submit-row">
+      <button type="submit" class="submit-btn">Submit Application</button>
     </div>
-  </footer>
+  </form>
 
+  <!-- ============================================================
+       Membership tier cards
+       ============================================================ -->
+  <div class="membership-cards">
+
+    <article class="tier-card tier-np">
+      <div class="seal">NP</div>
+      <h3>NP Membership</h3>
+      <span class="tier-fee">No fee</span>
+      <p>For registered non-profit organizations serving the Riverbend community.</p>
+      <button class="details-link" data-modal="modal-np">See benefits</button>
+    </article>
+
+    <article class="tier-card tier-bronze">
+      <div class="seal">Br</div>
+      <h3>Bronze Membership</h3>
+      <span class="tier-fee">Entry-level tier</span>
+      <p>A solid starting point for new and small businesses joining the chamber.</p>
+      <button class="details-link" data-modal="modal-bronze">See benefits</button>
+    </article>
+
+    <article class="tier-card tier-silver">
+      <div class="seal">Si</div>
+      <h3>Silver Membership</h3>
+      <span class="tier-fee">Mid-level tier</span>
+      <p>Expanded visibility and event access for growing organizations.</p>
+      <button class="details-link" data-modal="modal-silver">See benefits</button>
+    </article>
+
+    <article class="tier-card tier-gold">
+      <div class="seal">Au</div>
+      <h3>Gold Membership</h3>
+      <span class="tier-fee">Premier tier</span>
+      <p>Our highest tier, with top billing and full access to chamber programs.</p>
+      <button class="details-link" data-modal="modal-gold">See benefits</button>
+    </article>
+
+  </div>
+</main>
+
+<!-- ============================================================
+     Modals — one per membership tier
+     ============================================================ -->
+<dialog class="tier-modal tier-np" id="modal-np">
+  <div class="modal-inner">
+    <div class="seal">NP</div>
+    <h2>NP Membership</h2>
+    <span class="tier-fee">No fee</span>
+    <ul>
+      <li>Listing in the chamber's community directory</li>
+      <li>Access to monthly networking mixers</li>
+      <li>Volunteer and grant opportunity alerts</li>
+      <li>Use of chamber meeting space (limited hours)</li>
+    </ul>
+    <button class="modal-close" data-close="modal-np">Close</button>
+  </div>
+</dialog>
+
+<dialog class="tier-modal tier-bronze" id="modal-bronze">
+  <div class="modal-inner">
+    <div class="seal">Br</div>
+    <h2>Bronze Membership</h2>
+    <span class="tier-fee">Entry-level tier</span>
+    <ul>
+      <li>Everything in NP Membership</li>
+      <li>Directory listing with logo</li>
+      <li>One free ticket to the annual gala</li>
+      <li>10% discount on chamber-hosted events</li>
+    </ul>
+    <button class="modal-close" data-close="modal-bronze">Close</button>
+  </div>
+</dialog>
+
+<dialog class="tier-modal tier-silver" id="modal-silver">
+  <div class="modal-inner">
+    <div class="seal">Si</div>
+    <h2>Silver Membership</h2>
+    <span class="tier-fee">Mid-level tier</span>
+    <ul>
+      <li>Everything in Bronze Membership</li>
+      <li>Quarterly spotlight feature on the chamber homepage</li>
+      <li>Four free tickets to chamber events per year</li>
+      <li>20% discount on advertising space in the newsletter</li>
+    </ul>
+    <button class="modal-close" data-close="modal-silver">Close</button>
+  </div>
+</dialog>
+
+<dialog class="tier-modal tier-gold" id="modal-gold">
+  <div class="modal-inner">
+    <div class="seal">Au</div>
+    <h2>Gold Membership</h2>
+    <span class="tier-fee">Premier tier</span>
+    <ul>
+      <li>Everything in Silver Membership</li>
+      <li>Permanent spotlight placement on the chamber homepage</li>
+      <li>Unlimited event tickets for staff</li>
+      <li>Priority booking for chamber-hosted training sessions</li>
+      <li>Dedicated feature in the annual member showcase</li>
+    </ul>
+    <button class="modal-close" data-close="modal-gold">Close</button>
+  </div>
+</dialog>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Riverbend Chamber of Commerce &middot; <span class="brass">Building business together</span></p>
+</footer>
 </body>
 </html>

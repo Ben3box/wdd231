@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover | Riverbend Chamber of Commerce</title>
+  <meta name="description" content="Discover points of interest, attractions, and commercial landmarks in Riverbend.">
+  <meta name="author" content="Benjamin Iriganje">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/discover.css">
+
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <!-- type="module" allows ES module import/export -->
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <img src="images/favicon.svg" alt="logo" width="40" height="40">
+    <div class="brand-row">
+      <div class="brand">Riverbend <span>Chamber</span></div>
+      <button id="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html" aria-current="page">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="discover-container">
+    <section class="hero-banner">
+      <h1>Discover Riverbend</h1>
+      <p>Explore the landmarks, cultural venues, and economic centers that make our region a premier place to live, work, and grow.</p>
+    </section>
+
+    <!-- localStorage Visitor Message Banner -->
+    <aside class="visit-banner" aria-live="polite">
+      <p id="visit-message">Checking visit history...</p>
+    </aside>
+
+    <!-- Grid layout container using named grid areas -->
+    <section class="discover-grid" id="discover-grid">
+      <!-- 8 Cards dynamically rendered here via discover.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> Riverbend Chamber of Commerce &middot; <span class="brass">Building business together</span></p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

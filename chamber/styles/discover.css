@@ -1,66 +1,73 @@
 /* ============================================================
    Chamber Discover Page Styles (discover.css)
+   Built on the Regional Chamber of Commerce design tokens
+   defined in styles.css (Tanganyika night / papyrus / brass).
    ============================================================ */
 
-.discover-container {
-  max-width: 1200px;
-  margin: 1.5rem auto 3rem;
-  padding: 0 1rem;
+.discover-main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 2.5rem) 1.5rem 4rem;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem;
-}
-
-/* --- Hero & Visitor Banner --- */
-.hero-banner {
+/* --- Hero --- */
+.discover-hero {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.hero-banner h1 {
-  font-family: var(--font-display, Georgia, serif);
-  font-size: 2rem;
-  color: var(--ink, #1e2b28);
+.discover-hero .section__eyebrow {
+  display: block;
+}
+
+.discover-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--color-ink);
   margin-bottom: 0.5rem;
 }
 
-.visit-banner {
-  background-color: var(--paper-card, #fbfaf6);
-  border: 1px solid var(--rule, #c9c2ac);
-  border-left: 4px solid var(--brass, #b08d46);
-  padding: 0.9rem 1.2rem;
-  margin-bottom: 2rem;
-  border-radius: 4px;
-  text-align: center;
-  font-weight: 600;
-  color: var(--ink, #1e2b28);
+.discover-hero p {
+  max-width: 60ch;
+  margin: 0 auto;
+  color: var(--color-ink-soft);
 }
 
-/* --- Discover Cards Base Styles --- */
+/* --- Visitor message banner (localStorage) --- */
+.visit-banner {
+  background: var(--color-paper-2);
+  border: 1px solid rgba(18, 32, 31, 0.12);
+  border-left: 4px solid var(--color-gold);
+  border-radius: 8px;
+  padding: 0.9rem 1.25rem;
+  margin-bottom: 2.25rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-ink);
+  box-shadow: 0 6px 16px rgba(14, 42, 46, 0.05);
+}
+
+/* --- Discover cards --- */
 .discover-card {
-  background-color: var(--paper-card, #fbfaf6);
-  border: 1px solid var(--rule, #c9c2ac);
-  border-radius: 6px;
-  padding: 1.2rem;
+  background: var(--color-paper-2);
+  border: 1px solid rgba(18, 32, 31, 0.1);
+  border-radius: var(--radius);
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 24px rgba(14, 42, 46, 0.05);
 }
 
 .discover-card h2 {
-  font-family: var(--font-display, Georgia, serif);
-  font-size: 1.25rem;
-  color: var(--ink, #1e2b28);
-  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  color: var(--color-ink);
+  margin-bottom: 0.6rem;
 }
 
 .discover-card figure {
-  margin: 0 0 0.8rem 0;
+  margin: 0 0 0.85rem 0;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 6px;
+  background: var(--color-bg-soft);
 }
 
 .discover-card figure img {
@@ -72,41 +79,46 @@ header {
 
 .discover-card address {
   font-style: normal;
-  font-size: 0.85rem;
-  color: var(--brass-dark, #8c6d33);
+  font-family: var(--font-data);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--color-ember-dark);
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .discover-card p {
-  font-size: 0.92rem;
-  line-height: 1.45;
-  color: var(--text-main, #24302c);
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
   flex-grow: 1;
-  margin-bottom: 1rem;
+  margin: 0 0 1.1rem;
 }
 
 .learn-more-btn {
-  background-color: var(--ink, #1e2b28);
-  color: #ffffff;
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
   align-self: start;
-  transition: background-color 0.2s ease;
+  background: var(--color-ink);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 .learn-more-btn:hover {
-  background-color: var(--stamp-teal, #2f6f62);
+  background: var(--color-ember);
+  transform: translateY(-1px);
 }
 
 /* ============================================================
    GRID-TEMPLATE-AREAS BREAKPOINTS
    ============================================================ */
 
-/* 1. Small Screens (320px to 640px) — 1 column stack */
+/* 1. Small screens (320px–640px): single-column stack */
 .discover-grid {
   display: grid;
   gap: 1.5rem;
@@ -122,7 +134,7 @@ header {
     "area8";
 }
 
-/* 2. Medium Screens (641px to 1024px) — 2 column asymmetric arrangement */
+/* 2. Medium screens (641px–1024px): 2-column asymmetric layout */
 @media (min-width: 641px) and (max-width: 1024px) {
   .discover-grid {
     grid-template-columns: 1fr 1fr;
@@ -135,18 +147,17 @@ header {
       "area7 area8";
   }
 
-  /* Image hover effect for tablet screens */
   .discover-card figure img {
     transition: transform 0.3s ease, filter 0.3s ease;
   }
 
   .discover-card figure:hover img {
     transform: scale(1.04);
-    filter: brightness(1.05);
+    filter: brightness(1.06);
   }
 }
 
-/* 3. Large Screens (1025px and above) — 4 column featured layout */
+/* 3. Large screens (1025px+): 4-column featured layout */
 @media (min-width: 1025px) {
   .discover-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -156,13 +167,12 @@ header {
       "area6 area7 area8 area8";
   }
 
-  /* Image hover effect for desktop screens */
   .discover-card figure img {
-    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
 
   .discover-card figure:hover img {
     transform: scale(1.05);
-    filter: contrast(1.08);
+    filter: contrast(1.08) saturate(1.08);
   }
 }

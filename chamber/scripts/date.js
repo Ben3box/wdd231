@@ -1,16 +1,9 @@
-/* ============================================================
-   discover.js
-   Loads the 8 Bujumbura points of interest from data/discover.mjs,
-   renders them as cards in the named-grid-area layout, and shows
-   a returning-visitor message using localStorage.
-   ============================================================ */
-
 import { itemsOfInterest } from "../data/discover.mjs";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // --- 1. Returning-visitor message via localStorage ---
+  // --- 1. Handle Visitor Message using localStorage ---
   const visitMessageEl = document.getElementById("visit-message");
-
+  
   if (visitMessageEl) {
     const lastVisit = localStorage.getItem("lastVisitDate");
     const now = Date.now();
@@ -31,16 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    // Update stored visit timestamp to current time
     localStorage.setItem("lastVisitDate", now.toString());
   }
 
-  // --- 2. Render the 8 discover cards into named grid areas ---
+  // --- 2. Dynamically Generate 8 Interest Cards ---
   const cardsContainer = document.getElementById("discover-grid");
 
   if (cardsContainer) {
     itemsOfInterest.forEach((item, index) => {
       const card = document.createElement("article");
       card.className = "discover-card";
+      // Assign named grid area (area1, area2, ... area8)
       card.style.gridArea = `area${index + 1}`;
 
       card.innerHTML = `

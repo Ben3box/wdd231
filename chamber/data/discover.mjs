@@ -1,58 +1,58 @@
 export const itemsOfInterest = [
   {
-    title: "Riverbend Historic Riverwalk",
-    address: "100 Front Street, Riverbend",
-    description: "A scenic 3-mile paved pathway along the river featuring restored historic streetlights, public benches, and vibrant native flower gardens.",
-    image: "images/riverwalk.webp",
-    alt: "Scenic view of Riverbend Historic Riverwalk"
+    title: "Rusizi National Park",
+    address: "Rusizi Delta, Bujumbura Rural Province",
+    description: "A wetland park where the Rusizi River meets Lake Tanganyika, established in 1990 and known for boat safaris to see hippos, crocodiles, and migratory birds against the backdrop of the delta's papyrus marshes.",
+    image: "images/discover/rusizi-park.webp",
+    alt: "Boat safari on the Rusizi River near Bujumbura"
   },
   {
-    title: "Chamber Business Incubator",
-    address: "450 Commerce Way, Suite 100, Riverbend",
-    description: "A state-of-the-art co-working space offering seed funding guidance, high-speed fiber internet, and networking events for new startups.",
-    image: "images/incubator.webp",
-    alt: "Modern interior of the Chamber Business Incubator"
+    title: "Livingstone-Stanley Monument",
+    address: "Mugere, about 12 km south of Bujumbura",
+    description: "A lakeside monument marking the spot where explorers David Livingstone and Henry Morton Stanley are believed to have met in 1871, and one of the most visited historical sites near the city.",
+    image: "images/discover/livingstone-stanley.webp",
+    alt: "Livingstone-Stanley monument on the Lake Tanganyika shoreline"
   },
   {
-    title: "Heritage Arts & Culture Center",
-    address: "215 Main Street, Riverbend",
-    description: "Hosting regional art exhibitions, theatrical performances, and weekly hands-on workshops for local artists and families.",
-    image: "images/arts-center.webp",
-    alt: "Front facade of Heritage Arts & Culture Center"
+    title: "Bujumbura Central Market",
+    address: "Marché Central, Rohero district, downtown Bujumbura",
+    description: "The city's rebuilt central market, a lively hub of everyday commerce where vendors sell fresh produce, textiles, and crafts, offering visitors a direct look at local business and daily life.",
+    image: "images/discover/central-market.webp",
+    alt: "Vendors and stalls at Bujumbura Central Market"
   },
   {
-    title: "Riverbend Farmers Market",
-    address: "50 Market Square, Riverbend",
-    description: "Open every Saturday morning year-round, featuring fresh local produce, artisanal cheeses, organic honey, and live musical entertainment.",
-    image: "images/farmers-market.webp",
-    alt: "Bustling stalls at the Riverbend Farmers Market"
+    title: "Musée Vivant (Living Museum)",
+    address: "Avenue de l'UNESCO, Bujumbura",
+    description: "An open-air cultural museum showcasing traditional Burundian architecture, crafts, and daily life, widely regarded as one of the best introductions to the country's heritage.",
+    image: "images/discover/musee-vivant.webp",
+    alt: "Traditional huts and exhibits at the Musee Vivant in Bujumbura"
   },
   {
-    title: "Pioneer Tech Park",
-    address: "800 Innovation Boulevard, Riverbend",
-    description: "A premier commercial hub housing bio-tech startups, software developers, and research facilities driving regional growth.",
-    image: "images/tech-park.webp",
-    alt: "Exterior view of Pioneer Tech Park buildings"
+    title: "Saga Beach",
+    address: "Saga Beach, Lake Tanganyika shoreline, Bujumbura",
+    description: "A popular lakefront beach on Lake Tanganyika where residents and visitors gather for swimming, waterside dining, and sunset views over the world's second-deepest lake.",
+    image: "images/discover/saga-beach.webp",
+    alt: "Sunset over Lake Tanganyika at Saga Beach"
   },
   {
-    title: "Oakridge Botanical Gardens",
-    address: "1200 Conservatory Lane, Riverbend",
-    description: "Spanning 40 acres of preserved glass greenhouses, Japanese zen gardens, and educational nature trails.",
-    image: "images/botanical-gardens.webp",
-    alt: " Lush greenery inside Oakridge Botanical Gardens"
+    title: "Monument de l'Unite",
+    address: "Boulevard de l'Uprona, central Bujumbura",
+    description: "A national monument in the heart of the city commemorating Burundi's unity, and a common gathering point for civic events and city tours.",
+    image: "images/discover/monument-unite.webp",
+    alt: "Monument de l'Unite in downtown Bujumbura"
   },
   {
-    title: "Centennial Amphitheater",
-    address: "300 Park View Road, Riverbend",
-    description: "An open-air venue with seating for 2,500 people, hosting summer outdoor cinema nights, symphonies, and community galas.",
-    image: "images/amphitheater.webp",
-    alt: "Sun setting behind Centennial Amphitheater"
+    title: "Hotel Club du Lac Tanganyika",
+    address: "Boulevard du 28 Novembre, Bujumbura lakefront",
+    description: "A long-established lakeside hotel and event venue that has hosted diplomats and travelers for decades, valued locally as a hub for business meetings, conferences, and lakeside dining.",
+    image: "images/discover/hotel-club-du-lac.webp",
+    alt: "Lakeside grounds of Hotel Club du Lac Tanganyika"
   },
   {
-    title: "Riverbend Regional Airport",
-    address: "500 Aviation Way, Riverbend",
-    description: "Connecting local businesses directly to national trade hubs with efficient cargo services and commercial flight routes.",
-    image: "images/airport.webp",
-    alt: "Plane on the runway at Riverbend Regional Airport"
+    title: "Regina Mundi Cathedral",
+    address: "Rohero district, Bujumbura",
+    description: "One of Bujumbura's principal cathedrals, notable for its scale and architecture, and a significant landmark for the city's large Catholic community.",
+    image: "images/discover/regina-mundi.webp",
+    alt: "Exterior of Regina Mundi Cathedral in Bujumbura"
   }
 ];

@@ -3,64 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover | Riverbend Chamber of Commerce</title>
-  <meta name="description" content="Discover points of interest, attractions, and commercial landmarks in Riverbend.">
+  <title>Discover Bujumbura | Regional Chamber of Commerce</title>
+  <meta name="description" content="Discover landmarks, culture, and economic centers in Bujumbura, Burundi, presented by the Regional Chamber of Commerce.">
   <meta name="author" content="Benjamin Iriganje">
 
+  <!-- Favicons -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Google Fonts Preconnects -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="Discover Bujumbura | Regional Chamber of Commerce">
+  <meta property="og:description" content="Landmarks, culture, and economic centers that make Bujumbura a premier place to live, work, and grow.">
+  <meta property="og:image" content="https://ben3box.github.io/wdd231/chamber/images/og-share.jpg">
+  <meta property="og:url" content="https://ben3box.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
 
-  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/discover.css">
 
-  <script src="../scripts/navigation.js" defer></script>
-  <script src="scripts/date.js" defer></script>
-  <!-- type="module" allows ES module import/export -->
+  <script src="scripts/navigation.js" defer></script>
+  <!-- type="module" so we can import the points-of-interest data -->
   <script type="module" src="scripts/discover.js"></script>
 </head>
 <body>
 
   <header class="site-header">
-    <img src="images/favicon.svg" alt="logo" width="40" height="40">
-    <div class="brand-row">
-      <div class="brand">Riverbend <span>Chamber</span></div>
-      <button id="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
-      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="images/favicon.svg" alt="Regional Chamber of Commerce logo" width="40" height="40">
+        <span class="brand__text">
+          Regional Chamber
+          <small>of Commerce &middot; Bujumbura</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle-btn" id="navToggleBtn" aria-expanded="false" aria-controls="mainNav">
+        &#9776; <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html" aria-current="page">Discover</a></li>
           <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li><a href="join.html">Join the Chamber</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="discover-container">
-    <section class="hero-banner">
-      <h1>Discover Riverbend</h1>
-      <p>Explore the landmarks, cultural venues, and economic centers that make our region a premier place to live, work, and grow.</p>
+  <main id="main" class="discover-main">
+
+    <section class="discover-hero">
+      <span class="section__eyebrow">Points of interest</span>
+      <h1>Discover Bujumbura</h1>
+      <p>Explore the landmarks, culture, and economic centers that make our lakefront capital a premier place to live, work, and visit.</p>
     </section>
 
-    <!-- localStorage Visitor Message Banner -->
+    <!-- localStorage visitor message -->
     <aside class="visit-banner" aria-live="polite">
-      <p id="visit-message">Checking visit history...</p>
+      <p id="visit-message">Checking visit history&hellip;</p>
     </aside>
 
     <!-- Grid layout container using named grid areas -->
-    <section class="discover-grid" id="discover-grid">
-      <!-- 8 Cards dynamically rendered here via discover.js -->
+    <section class="discover-grid" id="discover-grid" aria-label="Points of interest in Bujumbura">
+      <!-- 8 cards rendered here by scripts/discover.js -->
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="currentyear"></span> Riverbend Chamber of Commerce &middot; <span class="brass">Building business together</span></p>
-    <p id="lastModified"></p>
+    <div class="wrap footer__grid">
+      <div>
+        <h3>Regional Chamber of Commerce</h3>
+        <p>12 Avenue du Lac, Bujumbura, Burundi<br>Serving the businesses of the greater Bujumbura region since 1958.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Member Directory</a></li>
+          <li><a href="join.html">Join the Chamber</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>+257 22 24 50 00</li>
+          <li>info@regionalchamber-bjm.example.com</li>
+          <li>Mon&ndash;Fri, 8:00&ndash;17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <span>&copy; <span id="year"></span> Regional Chamber of Commerce, Bujumbura.</span>
+      <span>Built for the W05 Chamber of Commerce project.</span>
+    </div>
   </footer>
+
+  <script>
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>

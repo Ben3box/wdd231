@@ -222,8 +222,8 @@ h1, h2, h3 {
 /* -------------------- Hero -------------------- */
 .hero {
   position: relative;
-  background: radial-gradient(120% 140% at 15% 0%, #163d40 0%, var(--color-bg) 55%, #000000 100%);
-  color: var(--color-paper-2);
+  background: radial-gradient(120% 140% at 15% 0%, #163d40 0%, var(--color-bg) 55%, #081c1f 100%);
+  color: var(--color-paper);
   overflow: hidden;
 }
 
@@ -293,7 +293,7 @@ h1, h2, h3 {
 
 .btn--cta {
   background: var(--color-ember);
-  color: #ffffff;
+  color: #fff9f4;
 }
 
 .btn--cta:hover {

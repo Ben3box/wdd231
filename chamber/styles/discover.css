@@ -36,7 +36,7 @@
 .visit-banner {
   background: var(--color-paper-2);
   border: 1px solid rgba(18, 32, 31, 0.12);
-  border-left: 4px solid var(--color-gold);
+  border-left: 4px solid #785302; /* Deepened brass border for 4.5:1 contrast against light background */
   border-radius: 8px;
   padding: 0.9rem 1.25rem;
   margin-bottom: 2.25rem;
@@ -82,7 +82,7 @@
   font-family: var(--font-data);
   font-size: 0.78rem;
   letter-spacing: 0.02em;
-  color: var(--color-ember-dark);
+  color: #a03c0c; /* High-contrast terracotta for small text on white card background */
   font-weight: 600;
   margin-bottom: 0.6rem;
 }
@@ -98,7 +98,7 @@
 .learn-more-btn {
   align-self: start;
   background: var(--color-ink);
-  color: #fff;
+  color: #ffffff;
   border: none;
   padding: 0.6rem 1.1rem;
   border-radius: 999px;
@@ -110,7 +110,8 @@
 }
 
 .learn-more-btn:hover {
-  background: var(--color-ember);
+  background: #a03c0c; /* Deepened ember background on hover to meet 4.5:1 ratio for white text */
+  color: #ffffff;
   transform: translateY(-1px);
 }
 

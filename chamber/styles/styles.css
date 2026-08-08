@@ -15,7 +15,7 @@
   --color-paper-2: #ffffff;
   --color-ink: #12201f;
   --color-ink-soft: #3c5250;
-  --color-gold: #d9a441;        /* brass */
+  --color-gold: #f2ba52;        /* brass - brightened slightly for dark mode contrast */
   --color-ember: #e2672a;       /* sunset ember */
   --color-ember-dark: #b9501e;
   --color-line: rgba(233, 239, 233, 0.16);
@@ -256,13 +256,13 @@ h1, h2, h3 {
 
 .hero h1 em {
   font-style: normal;
-  color: var(--color-ember);
+  color: #ff8c53; /* Lightened ember for 4.5:1+ contrast on dark background */
 }
 
 .hero p {
   max-width: 46ch;
   font-size: 1.05rem;
-  color: rgba(233, 239, 233, 0.86);
+  color: #e9efe9; /* Fully opaque for full WCAG compliance */
   margin-bottom: 1.75rem;
 }
 
@@ -293,11 +293,12 @@ h1, h2, h3 {
 
 .btn--cta {
   background: var(--color-ember);
-  color: #fff9f4;
+  color: #12201f; /* Dark ink text on ember background yields high contrast */
 }
 
 .btn--cta:hover {
   background: var(--color-ember-dark);
+  color: #ffffff;
 }
 
 .btn--ghost {
@@ -331,7 +332,7 @@ h1, h2, h3 {
 
 .hero__stat span {
   font-size: 0.8rem;
-  color: rgba(233, 239, 233, 0.7);
+  color: #e9efe9; /* Solid white-papyrus for readability */
 }
 
 /* -------------------- Section shell -------------------- */
@@ -357,7 +358,7 @@ h1, h2, h3 {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ember-dark);
+  color: #a03c0c; /* High-contrast terracotta for light paper background */
   display: block;
   margin-bottom: 0.4rem;
 }
@@ -399,7 +400,7 @@ h1, h2, h3 {
 .event-card__date {
   font-family: var(--font-data);
   font-size: 0.78rem;
-  color: var(--color-ember-dark);
+  color: #a03c0c;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -457,7 +458,7 @@ h1, h2, h3 {
 
 .weather__desc {
   text-transform: capitalize;
-  color: rgba(233, 239, 233, 0.8);
+  color: #e9efe9;
 }
 
 .weather__forecast {
@@ -467,7 +468,7 @@ h1, h2, h3 {
 }
 
 .forecast-day {
-  background: rgba(233, 239, 229, 0.06);
+  background: #184247; /* Solid dark background to satisfy text contrast */
   border: 1px solid var(--color-line);
   border-radius: 10px;
   padding: 0.9rem 0.6rem;
@@ -486,11 +487,12 @@ h1, h2, h3 {
 .forecast-day__temp {
   font-family: var(--font-data);
   font-size: 1.1rem;
+  color: #e9efe9;
 }
 
 .forecast-day__desc {
   font-size: 0.76rem;
-  color: rgba(233, 239, 229, 0.7);
+  color: #e9efe9;
   text-transform: capitalize;
   margin-top: 0.2rem;
 }
@@ -498,7 +500,7 @@ h1, h2, h3 {
 .weather__status {
   font-family: var(--font-data);
   font-size: 0.85rem;
-  color: rgba(233, 239, 229, 0.7);
+  color: #e9efe9;
 }
 
 /* -------------------- Spotlights -------------------- */
@@ -548,7 +550,7 @@ h1, h2, h3 {
 
 .badge--gold {
   background: rgba(217, 164, 65, 0.16);
-  color: #a6741c;
+  color: #785302; /* Darker amber to pass contrast on light background */
 }
 
 .badge--silver {
@@ -571,7 +573,7 @@ h1, h2, h3 {
 }
 
 .spotlight-card__meta a {
-  color: var(--color-ember-dark);
+  color: #a03c0c;
   text-decoration: none;
 }
 
@@ -598,7 +600,7 @@ h1, h2, h3 {
 /* -------------------- Footer -------------------- */
 .site-footer {
   background: var(--color-bg);
-  color: rgba(233, 239, 229, 0.75);
+  color: #e9efe9;
   padding: 3rem 0 2rem;
 }
 
@@ -631,7 +633,7 @@ h1, h2, h3 {
 
 .footer__grid a {
   text-decoration: none;
-  color: rgba(233, 239, 229, 0.75);
+  color: #e9efe9;
 }
 
 .footer__grid a:hover {
@@ -690,4 +692,3 @@ h1, h2, h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan - Retail Hub</title>
+  <meta name="description" content="Individual Project Site Plan defining target audience, design choices, and structural wireframes for Retail Hub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+
+  <header>
+    <h1>Project Site Plan</h1>
+    <h2>Retail Hub</h2>
+  </header>
+
+  <main>
+    <!-- Site Name Section -->
+    <section class="plan-card">
+      <h2>Site Name</h2>
+      <p><strong>Name:</strong> Retail Hub</p>
+      <p><strong>Selection Reason:</strong> This name clearly identifies the platform as a centralized digital catalog and service point for everyday retail inventory, customer inquiries, and local product availability.</p>
+      <p><strong>Optional Domain Availability:</strong> retailhub-local.org</p>
+    </section>
+
+    <!-- Site Purpose Section -->
+    <section class="plan-card">
+      <h2>Site Purpose</h2>
+      <p>The site serves as a digital storefront and customer portal. It aims to display current in-stock retail inventory, highlight featured discounts, provide contact details, and allow customers to submit inquiries or product requests online before visiting the physical shop.</p>
+    </section>
+
+    <!-- Target Audience / Scenarios Section -->
+    <section class="plan-card">
+      <h2>Scenarios</h2>
+      <ul>
+        <li><strong>Scenario 1:</strong> "Does this shop currently have [specific product/item] in stock, and what is the current price?"</li>
+        <li><strong>Scenario 2:</strong> "What are the physical shop's operating hours and contact options for bulk orders?"</li>
+      </ul>
+    </section>
+
+    <!-- Color Scheme Section -->
+    <section class="plan-card">
+      <h2>Color Scheme</h2>
+      <p>The site plan uses a primary navy hue for structure and hierarchy, paired with a warm amber for call-to-action highlights and clear visual contrast.</p>
+      
+      <div class="color-palette">
+        <div class="color-box primary-bg">
+          <span>Primary: #1E3A8A</span>
+          <small>Header backgrounds, primary buttons, and main section headings.</small>
+        </div>
+        <div class="color-box secondary-bg">
+          <span>Secondary: #D97706</span>
+          <small>Accent highlights, hover states, and call-to-action borders.</small>
+        </div>
+        <div class="color-box neutral-dark-bg">
+          <span>Dark Neutral: #1F2937</span>
+          <small>Body text and main content readable markup.</small>
+        </div>
+        <div class="color-box neutral-light-bg">
+          <span>Light Neutral: #F3F4F6</span>
+          <small>Main page background and content card containers.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section class="plan-card">
+      <h2>Typography</h2>
+      <p><strong>Headings Font:</strong> Montserrat (Sans-serif) — Used for all section titles (`h1`, `h2`, `h3`) to create a bold, clean structure.</p>
+      <p><strong>Body Text Font:</strong> Open Sans (Sans-serif) — Used for paragraphs, lists, and form elements to ensure clear, accessible readability across mobile and desktop devices.</p>
+    </section>
+
+    <!-- Wireframe Section -->
+    <section class="plan-card">
+      <h2>Wireframes</h2>
+      <p>Structural layout planning for home page views across viewports:</p>
+      
+      <div class="wireframe-container">
+        <!-- Mobile Wireframe Representation -->
+        <div class="wireframe-box mobile-wireframe">
+          <h3>Mobile View</h3>
+          <div class="wf-block wf-header">Header / Logo</div>
+          <div class="wf-block wf-nav">≡ Mobile Nav</div>
+          <div class="wf-block wf-hero">Hero Banner</div>
+          <div class="wf-block wf-content">Featured Products</div>
+          <div class="wf-block wf-content">Shop Hours &amp; Location</div>
+          <div class="wf-block wf-footer">Footer</div>
+        </div>
+
+        <!-- Desktop Wireframe Representation -->
+        <div class="wireframe-box desktop-wireframe">
+          <h3>Desktop View</h3>
+          <div class="wf-block wf-header">Header / Logo &amp; Navigation Menu</div>
+          <div class="wf-block wf-hero">Hero Section / Call to Action</div>
+          <div class="wf-grid">
+            <div class="wf-block wf-content">Main Product Catalog</div>
+            <div class="wf-block wf-sidebar">Sidebar / Hours</div>
+          </div>
+          <div class="wf-block wf-footer">Footer Info</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Retail Hub Site Plan | Benjamin Iriganje</p>
+  </footer>
+
+  <script>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

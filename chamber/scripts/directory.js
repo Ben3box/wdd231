@@ -28,13 +28,14 @@ function renderDirectory(members) {
   gridEl.innerHTML = members
     .map((member) => {
       const badgeClass =
-        member.level === "gold"
-          ? "badge--gold"
-          : member.level === "silver"
-          ? "badge--silver"
-          : "badge--silver";
+        member.level === "gold" ? "badge--gold" : "badge--silver";
+        
       const levelLabel =
         member.level.charAt(0).toUpperCase() + member.level.slice(1) + " Member";
+
+      const cleanWebsite = member.website
+        ? member.website.replace(/^https?:\/\//, "")
+        : "";
 
       return `
         <article class="card spotlight-card">
@@ -43,10 +44,10 @@ function renderDirectory(members) {
               class="spotlight-card__logo"
               src="${member.logo}"
               alt="${member.name} logo"
-              onerror="this.onerror=null; this.replaceWith(Object.assign(document.createElement('div'), {className:'spotlight-card__logo', textContent:'${initials(member.name)}'}));"
+              loading="lazy"
             >
             <div>
-              <h3>${member.name}</h3>
+              <h2>${member.name}</h2>
               <span class="badge ${badgeClass}">${levelLabel}</span>
             </div>
           </div>
@@ -54,12 +55,25 @@ function renderDirectory(members) {
           <div class="spotlight-card__meta">
             <span>${member.phone}</span>
             <span>${member.address}</span>
-            <a href="${member.website}" target="_blank" rel="noopener">${member.website.replace(/^https?:\/\//, "")}</a>
+            <a href="${member.website}" target="_blank" rel="noopener">${cleanWebsite}</a>
           </div>
         </article>
       `;
     })
     .join("");
+
+  // Attach safe image fallback listener without inline onerror HTML
+  gridEl.querySelectorAll(".spotlight-card__logo").forEach((img) => {
+    img.addEventListener("error", function () {
+      const cardHeader = this.closest(".spotlight-card__top");
+      const memberName = cardHeader ? cardHeader.querySelector("h2")?.textContent : "";
+      
+      const fallbackDiv = document.createElement("div");
+      fallbackDiv.className = "spotlight-card__logo";
+      fallbackDiv.textContent = initials(memberName || "CC");
+      this.replaceWith(fallbackDiv);
+    });
+  });
 }
 
 async function initDirectory() {
@@ -81,12 +95,29 @@ async function initDirectory() {
   }
 }
 
-gridViewBtn.addEventListener("click", () => {
-  gridEl.classList.remove("directory--list");
-});
+// Toggle View Logic & Active States
+if (gridViewBtn && listViewBtn) {
+  gridViewBtn.addEventListener("click", () => {
+    gridEl.classList.remove("directory--list");
+    gridViewBtn.classList.add("active");
+    listViewBtn.classList.remove("active");
+    gridViewBtn.setAttribute("aria-pressed", "true");
+    listViewBtn.setAttribute("aria-pressed", "false");
+  });
 
-listViewBtn.addEventListener("click", () => {
-  gridEl.classList.add("directory--list");
-});
+  listViewBtn.addEventListener("click", () => {
+    gridEl.classList.add("directory--list");
+    listViewBtn.classList.add("active");
+    gridViewBtn.classList.remove("active");
+    listViewBtn.setAttribute("aria-pressed", "true");
+    gridViewBtn.setAttribute("aria-pressed", "false");
+  });
+}
+
+// Year update for Footer
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
 
 initDirectory();

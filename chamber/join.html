@@ -20,7 +20,6 @@
   <meta property="og:url" content="https://ben3box.github.io/wdd231/chamber/join.html">
   <meta property="og:type" content="website">
 
-  <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/join.css">
   <script src="scripts/script.js" defer></script>
 </head>
@@ -39,17 +38,14 @@
   </div>
 </header>
 
+<main class="join-layout" id="main">
+
+  <!-- Hero Section moved INSIDE <main> with the single <h1> -->
   <section class="page-hero">
-  <span class="eyebrow">Membership Application</span>
-  <h2>Join the Riverbend Chamber of Commerce</h2>
-  <p>Fill out the application below to become a member. Choose the tier that fits your organization — every level opens the door to a wider network, more visibility, and a stronger seat at the table.</p>
-</section>
-
-
-
-<main class="join-layout">
-
-  
+    <span class="eyebrow">Membership Application</span>
+    <h1>Join the Chamber | Riverbend Chamber of Commerce</h1>
+    <p>Fill out the application below to become a member. Choose the tier that fits your organization — every level opens the door to a wider network, more visibility, and a stronger seat at the table.</p>
+  </section>
 
   <!-- Membership application form -->
   <form class="application-form" method="get" action="thankyou.html" id="joinForm">
@@ -198,7 +194,7 @@
 <!-- Modals -->
 <dialog class="tier-modal" id="modal-np">
   <div class="modal-inner">
-    <h1>NP Membership Benefits</h1>
+    <h2>NP Membership Benefits</h2>
     <p class="tier-fee">Non-Profit Tier (No Fee)</p>
     <ul>
       <li>Listing in the chamber's community directory</li>
